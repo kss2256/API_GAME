@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{033d1680-293b-4ab1-971e-d811c41d7bdd}</ProjectGuid>
+    <RootNamespace>WindowsAPI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="func.h" />
+    <ClInclude Include="yaAnimation.h" />
+    <ClInclude Include="yaAnimationBtuuon.h" />
+    <ClInclude Include="yaAnimationTool.h" />
+    <ClInclude Include="yaAniPreview.h" />
+    <ClInclude Include="yaBackPack.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="def.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="yaAnimator.h" />
+    <ClInclude Include="yaBaldur.h" />
+    <ClInclude Include="yaBgImageObject.h" />
+    <ClInclude Include="yaButton.h" />
+    <ClInclude Include="yaCamera.h" />
+    <ClInclude Include="yaCollider.h" />
+    <ClInclude Include="yaCollisionManager.h" />
+    <ClInclude Include="yaComponent.h" />
+    <ClInclude Include="yaEarth.h" />
+    <ClInclude Include="yaEndScene.h" />
+    <ClInclude Include="yaFalse_Attack.h" />
+    <ClInclude Include="yaFalse_Death.h" />
+    <ClInclude Include="yaFalse_Key.h" />
+    <ClInclude Include="yaFalse_Knight.h" />
+    <ClInclude Include="yaGameObject.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WindowsAPI.h" />
+    <ClInclude Include="yaApplication.h" />
+    <ClInclude Include="yaEntity.h" />
+    <ClInclude Include="yaGround.h" />
+    <ClInclude Include="yaGroundButton.h" />
+    <ClInclude Include="yaGroundEarth.h" />
+    <ClInclude Include="yaHornet.h" />
+    <ClInclude Include="yaHornet_Attack.h" />
+    <ClInclude Include="yaHornet_Key.h" />
+    <ClInclude Include="yaHpUI.h" />
+    <ClInclude Include="yaHUD.h" />
+    <ClInclude Include="yaHusk.h" />
+    <ClInclude Include="yaImage.h" />
+    <ClInclude Include="yaInput.h" />
+    <ClInclude Include="yaLife.h" />
+    <ClInclude Include="yaLineGround.h" />
+    <ClInclude Include="yaLoadButton.h" />
+    <ClInclude Include="yaLogoScene.h" />
+    <ClInclude Include="Maths.h" />
+    <ClInclude Include="yaMissile.h" />
+    <ClInclude Include="yaMonster.h" />
+    <ClInclude Include="yaObject.h" />
+    <ClInclude Include="yaPanel.h" />
+    <ClInclude Include="yaPlayer.h" />
+    <ClInclude Include="yaPlayer_Attack.h" />
+    <ClInclude Include="yaPlayer_Save.h" />
+    <ClInclude Include="yaPlayScene.h" />
+    <ClInclude Include="yaResource.h" />
+    <ClInclude Include="yaResources.h" />
+    <ClInclude Include="yaRigidbody.h" />
+    <ClInclude Include="yaSaveButton.h" />
+    <ClInclude Include="yaScene.h" />
+    <ClInclude Include="yaSceneManager.h" />
+    <ClInclude Include="yaSound.h" />
+    <ClInclude Include="yaSoundManager.h" />
+    <ClInclude Include="yaTile.h" />
+    <ClInclude Include="yaTime.h" />
+    <ClInclude Include="yaTitleScene.h" />
+    <ClInclude Include="yaGroundTool.h" />
+    <ClInclude Include="yaUiBase.h" />
+    <ClInclude Include="yaUIManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="func.cpp" />
+    <ClCompile Include="Maths.cpp" />
+    <ClCompile Include="yaAnimation.cpp" />
+    <ClCompile Include="yaAnimationBtuuon.cpp" />
+    <ClCompile Include="yaAnimationTool.cpp" />
+    <ClCompile Include="yaAnimator.cpp" />
+    <ClCompile Include="yaAniPreview.cpp" />
+    <ClCompile Include="yaBackPack.cpp" />
+    <ClCompile Include="yaBaldur.cpp" />
+    <ClCompile Include="yaBgImageObject.cpp" />
+    <ClCompile Include="yaButton.cpp" />
+    <ClCompile Include="yaCamera.cpp" />
+    <ClCompile Include="yaCollider.cpp" />
+    <ClCompile Include="yaCollisionManager.cpp" />
+    <ClCompile Include="yaComponent.cpp" />
+    <ClCompile Include="yaEarth.cpp" />
+    <ClCompile Include="yaEndScene.cpp" />
+    <ClCompile Include="yaFalse_Attack.cpp" />
+    <ClCompile Include="yaFalse_Death.cpp" />
+    <ClCompile Include="yaFalse_Key.cpp" />
+    <ClCompile Include="yaFalse_Knight.cpp" />
+    <ClCompile Include="yaGameObject.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="yaApplication.cpp" />
+    <ClCompile Include="yaEntity.cpp" />
+    <ClCompile Include="yaGround.cpp" />
+    <ClCompile Include="yaGroundButton.cpp" />
+    <ClCompile Include="yaGroundEarth.cpp" />
+    <ClCompile Include="yaHornet.cpp" />
+    <ClCompile Include="yaHornet_Attack.cpp" />
+    <ClCompile Include="yaHornet_Key.cpp" />
+    <ClCompile Include="yaHpUI.cpp" />
+    <ClCompile Include="yaHUD.cpp" />
+    <ClCompile Include="yaHusk.cpp" />
+    <ClCompile Include="yaImage.cpp" />
+    <ClCompile Include="yaInput.cpp" />
+    <ClCompile Include="yaLife.cpp" />
+    <ClCompile Include="yaLineGround.cpp" />
+    <ClCompile Include="yaLoadButton.cpp" />
+    <ClCompile Include="yaLogoScene.cpp" />
+    <ClCompile Include="yaMissile.cpp" />
+    <ClCompile Include="yaMonster.cpp" />
+    <ClCompile Include="yaPanel.cpp" />
+    <ClCompile Include="yaPlayer.cpp" />
+    <ClCompile Include="yaPlayer_Attack.cpp" />
+    <ClCompile Include="yaPlayer_Save.cpp" />
+    <ClCompile Include="yaPlayScene.cpp" />
+    <ClCompile Include="yaResource.cpp" />
+    <ClCompile Include="yaResources.cpp" />
+    <ClCompile Include="yaRigidbody.cpp" />
+    <ClCompile Include="yaSaveButton.cpp" />
+    <ClCompile Include="yaScene.cpp" />
+    <ClCompile Include="yaSceneManager.cpp" />
+    <ClCompile Include="yaSound.cpp" />
+    <ClCompile Include="yaSoundManager.cpp" />
+    <ClCompile Include="yaTile.cpp" />
+    <ClCompile Include="yaTime.cpp" />
+    <ClCompile Include="yaTitleScene.cpp" />
+    <ClCompile Include="yaGroundTool.cpp" />
+    <ClCompile Include="yaUiBase.cpp" />
+    <ClCompile Include="yaUIManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WindowsAPI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico" />
+    <Image Include="WindowsAPI.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
